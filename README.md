@@ -11,7 +11,7 @@ Stark is a hot-fix framework for Android. It supports swapping new implementatio
 
 1. git clone https://github.com/ximsfei/Stark.git
 2. cd Stark
-3. ./gradlew :stark-sample:clean :stark-sample:assembleDebug
+3. ./gradlew :stark-sample:clean :stark-sample:assembleInternalDebug
 4. adb install -r stark-sample/build/outputs/apk/internal/debug/stark-sample-internal-debug.apk 
 5. Launch sample APK.
 6. Fix code and resources.
