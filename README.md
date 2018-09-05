@@ -44,7 +44,7 @@ Fix Resources
 Change the `TextView` in activity_main.xml and activity_second.xml to `Button`.
 
 7. ./gradlew :stark-sample:clean :stark-sample:starkGeneratePatchInternalDebug
-8. adb push stark-sample/build/outputs/apk/debug/stark-sample-debug.patch /sdcard/Android/data/com.ximsfei.stark.app/fix.apk
+8. adb push stark-sample/build/outputs/apk/internal/debug/stark-sample-internal-debug.patch  /sdcard/Android/data/com.ximsfei.stark.app/fix.apk
 9. Launch sample APK.
 10. Click the Button of applyPatch.
 11. Click the Button of recreate.
