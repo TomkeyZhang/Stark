@@ -12,7 +12,7 @@ Stark is a hot-fix framework for Android. It supports swapping new implementatio
 1. git clone https://github.com/ximsfei/Stark.git
 2. cd Stark
 3. ./gradlew :stark-sample:clean :stark-sample:assembleDebug
-4. adb install -r stark-sample/build/outputs/apk/debug/stark-sample-debug.apk
+4. adb install -r stark-sample/build/outputs/apk/internal/debug/stark-sample-internal-debug.apk 
 5. Launch sample APK.
 6. Fix code and resources.
 
@@ -43,7 +43,7 @@ Fix Resources
 
 Change the `TextView` in activity_main.xml and activity_second.xml to `Button`.
 
-7. ./gradlew :stark-sample:clean :stark-sample:starkGeneratePatchDebug
+7. ./gradlew :stark-sample:clean :stark-sample:starkGeneratePatchInternalDebug
 8. adb push stark-sample/build/outputs/apk/debug/stark-sample-debug.patch /sdcard/Android/data/com.ximsfei.stark.app/fix.apk
 9. Launch sample APK.
 10. Click the Button of applyPatch.
